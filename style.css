@@ -123,12 +123,14 @@ span {
 
 .about_description {
   flex: 2;
+  margin: 4vh;
 }
 
 .about_photo {
   flex: 1;
   justify-content: center;
   border-radius: 100px;
+  /* filter: grayscale(90%); */
 }
 
 .contact_container {
