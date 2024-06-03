@@ -19,7 +19,7 @@ p {
 
 .nav_bar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: fixed;
   top: 3.5vh;
   left: 1vh;
@@ -28,13 +28,10 @@ p {
 }
 
 .nav_logo {
-  height: 80%;
-  width: 20%;
   flex: 1;
   display: flex;
   justify-content: start;
-  align-items: center;
-  
+  padding-left: 2.5vh;
 }
 
 .nav_items {
@@ -181,7 +178,8 @@ span {
   color: aliceblue;
 }
 
-.contact_id::after {
+.contact_id::after,
+.nav_id::after{
   content: "";
   position: relative;
   display: block;
@@ -195,7 +193,8 @@ span {
   transition: transform 0.3s ease;
 }
 
-.contact_id:hover::after {
+.contact_id:hover::after,
+.nav_id:hover::after {
   transform: scaleX(1);
 }
 
