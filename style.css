@@ -16,7 +16,9 @@ p {
   margin: 0;
 }
 
-.nav_bar {
+header{
+  align-items: center;
+  text-align: center;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -26,26 +28,30 @@ p {
   color: whitesmoke;
 }
 
-.nav_logo {
+header a {
   flex: 1;
   display: flex;
   justify-content: start;
   padding-left: 2.5vh;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-.nav_items {
-  flex: 2;
-  list-style: none;
+ 
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
+  flex : 2;
 }
-
-.nav_items li {
+nav a {
   text-decoration: none;
-}
+  color: whitesmoke;
 
+}
+nav a.active {
+  color: rgb(41, 40, 40);
+}
 .home_description {
   width: 100%;
   font-weight: 700;
@@ -57,7 +63,7 @@ p {
   color: transparent;
 }
 
-.nav_items li,
+.nav_items a,
 .contact_items {
   cursor: pointer;
 }
@@ -72,6 +78,8 @@ p {
   flex-direction: column;
   justify-content: center;
   font-weight: bolder;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes color {
@@ -232,4 +240,8 @@ span {
   .contact_work:hover{
     font-size: 2.3rem;
     }
+}
+#project{
+  height: 80vh;
+  background-color: grey;
 }
