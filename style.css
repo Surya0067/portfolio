@@ -70,7 +70,7 @@ nav a.active {
 }
 
 .home_container {
-  background: linear-gradient(50deg, #fab2ff, #62cff4, #2bff88);
+  background: linear-gradient(120deg, #40E0D0, #9FE2BF, #CCCCFF);
   background-size: 300% 300%;
   animation: color 6s ease-in infinite;
   height: 100vh;
