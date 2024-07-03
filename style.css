@@ -127,26 +127,27 @@ span {
 }
 .about_description {
   color: #C5C6C7;
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  padding: 2vh;
   text-align: center;
   font-size: 1.1rem;
-}
-
-
-.about_description {
-  flex: 2;
   margin: 4vh;
   font-size: 2.5rem;
 }
 
 .about_photo {
-  flex: 1;
-  padding-left:2vh;
+  padding:2vh;
+  flex : 0.5;
   border-radius: 15px;
   filter: grayscale(70%);
   transition: all 0.3s ease;
 }
 .about_photo:hover{
   filter: grayscale(5%);
+  border-radius: 40px;
+
 }
 #project{
   /* background-color: rgb(31, 31, 31); */
@@ -155,8 +156,7 @@ span {
 }
 
 .project_items{
-  display: grid;
-  
+  display: flexbox;
   background: green;
   justify-content: space-evenly;
   align-items: center;
@@ -166,10 +166,15 @@ span {
 
 .project_item{
   display: flex;
+  background: red;
+  margin-bottom: 10px;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
-  margin: 1.5vh;
+}
+.project_head{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 5vh;
 }
 
 .project_main{
@@ -178,10 +183,29 @@ span {
   flex: 2;
 }
 
-.project_img{
-
+.project_name{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1vh;
 }
 
+.project_des{
+  font-size: 1.3rem;
+  margin: 2vh;
+}
+
+.project_btn{
+  padding: 1vh;
+}
+
+
+
+.project_img{
+  flex:0.5;
+  padding: 2vh;
+  height: 25vh;
+  width: 15vw;
+}
 
 .contact_container {
   color: whitesmoke;
